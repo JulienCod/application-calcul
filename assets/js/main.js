@@ -8,6 +8,8 @@ let randomRange = 0;
 let score = 0;
 let counter = 0;   
 
+
+
 document.getElementById("level").innerHTML=`<div>
 <p>Type de calcul</p>
 <button class="button" value='+' onclick="setSymbol(this)">+</button>
@@ -121,9 +123,17 @@ function testQuestion(){
       </div>
         <input type="number" id="playerInput">
       <div>
-        <button class="button" onclick="setUserInput()">valider</button>
+        <button class="button" id="valider" onclick="setUserInput()">valider</button>
       </div>`
+  document.getElementById("playerInput").focus();
+  document.getElementById("playerInput").addEventListener("keydown",(value) =>{
+     if (value.key === 'Enter')
+     setUserInput()
+  })
   
+}
+function onKeydown(value){
+ 
 }
 
 //Récupérer le résultat de l’utilisateur.
