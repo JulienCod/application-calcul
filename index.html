@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcul</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/TailleImages.css">
+</head>
+<body>
+    <header>
+        <h1>API CALCUL</h1>
+    </header>
+    <div id="separation"></div>
+    <div class="flex-around">
+        <img src="/assets/images/crayon.png" id="crayon" alt="image de crayon de couleur">
+        <img src="/assets/images/ecole.png" id="ecole" alt="image d'une école'">
+        <img src="/assets/images/livres.png" id="livre" alt="image de livre">
+    </div>
+    <div id="tableau">
+        <div class="flex-around " id="buttonScore">
+            <!--Bouton retour-->
+            <button class="button" id="buttonBack" type = "button" value = "Retour"  onclick = "history.go(0)">Retour</button>
+                        
+            <!--affiche le score-->
+            <div id="score">
+                
+            </div>
+        </div>
+
+        <!-- affiche le niveau de difficulté -->
+        <div class="flex-around" id="level">
+            
+        </div>
+        <!--affiche le calcul-->
+        <div id="calcul" >
+
+        </div>
+
+        <!--affiche le résultat-->
+        <div id="result">
+
+        </div>
+    </div>
+    <div class="flex-around">
+        <img src="/assets/images/outilsMathematique.png" id="outilsMathematique" alt="image d'outils de mathématique">
+        <img src="/assets/images/ciseaux.png" id="ciseaux" alt="image de ciseaux">
+        <img src="/assets/images/gomme.png" id="gomme" alt="image d'une gomme">
+    </div>
+    
+    <script src="/assets/js/main.js"></script>
+    
+</body>
+</html>
