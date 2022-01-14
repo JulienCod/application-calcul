@@ -109,7 +109,6 @@ function calculateTest(){
   testQuestion();
 }
 
-
  //afficher le test
 function testQuestion(){
            
@@ -130,10 +129,6 @@ function testQuestion(){
      if (value.key === 'Enter')
      setUserInput()
   })
-  
-}
-function onKeydown(value){
- 
 }
 
 //Récupérer le résultat de l’utilisateur.
