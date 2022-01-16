@@ -1,29 +1,40 @@
 body{
-    background-color: #15066C;
+    background: #000428;
+    background: -webkit-linear-gradient(to right, #004e92, #000428); 
+    background: linear-gradient(to right, #004e92, #000428); 
+   
     padding: 0%;
     margin: 0%;
+}
+#container{
+    width: auto;
+    max-height: 600px;
 }
 h1{
     text-align: center;
     color: white;
-    font-size: 5rem;
-}
-#separation{
-    background-color: #481818;
-    height: 50px;
+    font-size: 40px;
+    margin: 50px;
 }
 .flex-around{
     display: flex;
     justify-content: space-around;
 }
 #tableau{
-    background: #000000;
-    height: 421px;
+    background: #000000;  
+    background: -webkit-linear-gradient(to right, #353232, #000000); 
+    background: linear-gradient(to right, #353232, #000000);     
+
+    height: 400px;
     width: 600px;
     border-radius: 40px;
-    border: 1.5rem solid #481818;
+    border: 10px solid #481818;
     margin: auto;
     position:relative
+}
+.slide-in-elliptic-top-fwd {
+	-webkit-animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 h2{
     color: white;
@@ -80,7 +91,7 @@ margin:0;
 }
 .button:active {
 	position:relative;
-	top:1px;
+	top:5px;
 }
 #buttonBack{
     position:absolute;
@@ -106,7 +117,8 @@ margin:0;
 	background-color:#bda257;
 }
 #buttonBack:active {
-	top:355px;
+	top:345px;
+    bottom: 5px
 }
 .floatleft{
     float: left;
@@ -165,4 +177,7 @@ p{
     font-size: 40px;
     align-items: center;
     color: white;
+}
+footer{
+    padding:50px
 }

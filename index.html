@@ -6,49 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calcul</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/TailleImages.css">
+    <link rel="stylesheet" href="./assets/css/animation.css">
 </head>
 <body>
-    <header>
-        <h1>APPLICATION DE CALCUL</h1>
-    </header>
-    <div id="separation"></div>
-    <div class="flex-around">
-        <img src="./assets/images/crayon.png" id="crayon" alt="image de crayon de couleur">
-        <img src="./assets/images/ecole.png" id="ecole" alt="image d'une école'">
-        <img src="./assets/images/livres.png" id="livre" alt="image de livre">
-    </div>
-    <div id="tableau">
-        <div class="flex-around ">
-            <!--affiche le score-->
-            <div id="score">
+    <div id="container">
+        <header>
+            <h1>APPLICATION DE CALCUL</h1>
+        </header>
+        
+        <div id="tableau" class="slide-in-elliptic-top-fwd">
+            <div class="flex-around ">
+                <!--affiche le score-->
+                <div id="score">
+                    
+                </div>
+            </div>
+
+            <!-- affiche le niveau de difficulté -->
+            <div class="flex-around" id="level">
                 
             </div>
-        </div>
-
-        <!-- affiche le niveau de difficulté -->
-        <div class="flex-around" id="level">
+            <!--affiche le calcul-->
+            <div id="calcul" >
+                
+            </div>
             
-        </div>
-        <!--affiche le calcul-->
-        <div id="calcul" >
-            
+            <!--affiche le résultat-->
+            <div id="result">
+                
+            </div>
+            <!--Bouton retour-->
+            <button id="buttonBack" type = "button" value = "Retour"  onclick = "history.go(0)">Retour</button>
+                        
         </div>
         
-        <!--affiche le résultat-->
-        <div id="result">
-            
-        </div>
-        <!--Bouton retour-->
-        <button id="buttonBack" type = "button" value = "Retour"  onclick = "history.go(0)">Retour</button>
-                    
+        <footer>
+            <div>
+                <p>Créé par Julien Crutain Janvier 2022</p>
+            </div>
+        </footer>
     </div>
-    <div class="flex-around">
-        <img src="./assets/images/outilsMathematique.png" id="outilsMathematique" alt="image d'outils de mathématique">
-        <img src="./assets/images/ciseaux.png" id="ciseaux" alt="image de ciseaux">
-        <img src="./assets/images/gomme.png" id="gomme" alt="image d'une gomme">
-    </div>
-    
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
