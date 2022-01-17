@@ -10,21 +10,22 @@ let counter = 0;
 
 
 
-document.getElementById("level").innerHTML=`<div>
-<p>Type de calcul</p>
-<button class="button" value='+' onclick="setSymbol(this)">+</button>
-<button class="button" value='-' onclick="setSymbol(this)">-</button>
-<button class="button" value='x' onclick="setSymbol(this)">x</button>
-<button class="button" value='/' onclick="setSymbol(this)">/</button>
+document.getElementById("level").innerHTML=`
+<div>
+  <p>Type de calcul</p>
+  <button class="button" value='+' onclick="setSymbol(this)">+</button>
+  <button class="button" value='-' onclick="setSymbol(this)">-</button>
+  <button class="button" value='x' onclick="setSymbol(this)">x</button>
+  <button class="button" value='/' onclick="setSymbol(this)">/</button>
 </div>
 
 <div>
-<p>Niveau</p>
-<button class="button" value="1" onclick="setLevel(this)">1</button>
-<button class="button" value="2" onclick="setLevel(this)">2</button>
-<button class="button" value="3" onclick="setLevel(this)">3</button>
-<button class="button" value="4" onclick="setLevel(this)">4</button>
-<button class="button" value="5" onclick="setLevel(this)">5</button>
+  <p>Niveau</p>
+  <button class="button" value="1" onclick="setLevel(this)">1</button>
+  <button class="button" value="2" onclick="setLevel(this)">2</button>
+  <button class="button" value="3" onclick="setLevel(this)">3</button>
+  <button class="button" value="4" onclick="setLevel(this)">4</button>
+  <button class="button" value="5" onclick="setLevel(this)">5</button>
 </div>`
 
 

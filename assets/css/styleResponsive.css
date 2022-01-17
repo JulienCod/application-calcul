@@ -1,0 +1,246 @@
+@media screen and (max-width:400px) {
+    h1{
+        font-size: 24px;
+        margin: 5px;
+    }
+
+    #tableau{   
+    
+        height: 450px;
+        width: auto;
+        border: 5px solid #481818;
+        margin: 5px;
+    }
+    footer{
+        padding:5px;
+        margin: 5px;
+    }
+    footer p{
+        padding:5px;
+        margin: 5px;
+        font-size: 16px;
+    }
+    #level div{
+        width:auto;
+    }
+    .button{
+        border:2px solid #333029;
+        display:inline-block;
+        cursor:pointer;
+        color:#505739;
+        font-family:Arial;
+        font-size:14px;
+        font-weight:bold;
+        padding:5px 7px;
+        
+    }
+    .button:hover {
+        background:linear-gradient(to bottom, #bda257 5%, #eae0c2 100%);
+        background-color:#bda257;
+    }
+    .button:active {
+        position:relative;
+        top:2.5px;
+    }
+    #buttonBack{
+        position:absolute;
+        bottom: 10px;
+        left: 10px;
+        font-size:14px;
+        padding:5px 7px;
+    }
+    #buttonBack:active {
+        top:417px;
+        bottom: 5px
+    }
+    p{
+        font-size: 24px;
+    }
+    #calcul{
+        flex-direction: column;
+        justify-content: center;
+        font-size: 24px;
+        align-items: center;
+        color: white;
+    }
+    #playerInput{
+        width: 100px;
+        font-size: 24px;
+        border-radius: 10px;
+        margin:1%;
+        text-align: center;
+        padding:5px 7px;
+    }
+    #score{
+        width: auto;
+    }
+    #result div{
+        color: white;
+        font-size: 24px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 600px){
+    h1{
+        font-size: 30px;
+        margin: 5px;
+    }
+
+    #tableau{   
+        height: 450px;
+        width: auto;
+        border: 7.5px solid #481818;
+        margin: 5px;
+    }
+    footer{
+        padding:5px;
+        margin: 5px;
+    }
+    footer p{
+        padding:5px;
+        margin: 5px;
+        font-size: 18px;
+    }
+    #level div{
+        width:auto;
+    }
+    .button{
+        border:2px solid #333029;
+        display:inline-block;
+        cursor:pointer;
+        color:#505739;
+        font-family:Arial;
+        font-size:18px;
+        font-weight:bold;
+        padding:5px 7px;
+        
+    }
+    .button:hover {
+        background:linear-gradient(to bottom, #bda257 5%, #eae0c2 100%);
+        background-color:#bda257;
+    }
+    .button:active {
+        position:relative;
+        top:2.5px;
+    }
+    #buttonBack{
+        position:absolute;
+        bottom: 10px;
+        left: 10px;
+        font-size:18px;
+        padding:5px 7px;
+    }
+    #buttonBack:active {
+        top:410px;
+        bottom: 5px
+    }
+    p{
+        font-size: 30px;
+    }
+    #calcul{
+        flex-direction: column;
+        justify-content: center;
+        font-size: 24px;
+        align-items: center;
+        color: white;
+    }
+    #playerInput{
+        width: 100px;
+        font-size: 30px;
+        border-radius: 10px;
+        margin:1%;
+        text-align: center;
+        padding:5px 7px;
+    }
+    #score{
+        width: auto;
+    }
+    #result div{
+        color: white;
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 601px ) and (max-width: 800px){
+    h1{
+        font-size: 40px;
+        margin: 5px;
+    }
+
+    #tableau{   
+        height: 450px;
+        width: auto;
+        border: 10px solid #481818;
+        margin: 5px;
+    }
+    footer{
+        padding:7.5px;
+        margin: 7.5px;
+    }
+    footer p{
+        padding:7.5px;
+        margin: 7..5px;
+        font-size: 20px;
+    }
+    #level div{
+        width:auto;
+    }
+    .button{
+        border:2px solid #333029;
+        display:inline-block;
+        cursor:pointer;
+        color:#505739;
+        font-family:Arial;
+        font-size:20px;
+        font-weight:bold;
+        padding:7.5px 10.5px;
+        
+    }
+    .button:hover {
+        background:linear-gradient(to bottom, #bda257 5%, #eae0c2 100%);
+        background-color:#bda257;
+    }
+    .button:active {
+        position:relative;
+        top:2.5px;
+    }
+    #buttonBack{
+        position:absolute;
+        bottom: 10px;
+        left: 10px;
+        font-size:20px;
+        padding:7.5px 10.5px;
+    }
+    #buttonBack:active {
+        top:401px;
+        bottom: 6px
+    }
+    p{
+        font-size: 30px;
+    }
+    #calcul{
+        flex-direction: column;
+        justify-content: center;
+        font-size: 30px;
+        align-items: center;
+        color: white;
+    }
+    #playerInput{
+        width: 100px;
+        font-size: 30px;
+        border-radius: 10px;
+        margin:1%;
+        text-align: center;
+        padding:7.5px 10.5px;
+    }
+    #score{
+        width: auto;
+    }
+    #result div{
+        color: white;
+        font-size: 35px;
+        text-align: center;
+    }
+}
