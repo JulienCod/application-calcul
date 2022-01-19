@@ -53,6 +53,17 @@
         top:417px;
         bottom: 5px
     }
+    #buttonAcceuil{
+        position:absolute;
+        bottom: 10px;
+        right: 10px;
+        font-size:14px;
+        padding:5px 7px;
+    }
+    #buttonAcceuil:active {
+        top:417px;
+        bottom: 5px
+    }
     p{
         font-size: 24px;
     }
@@ -135,6 +146,17 @@
         top:410px;
         bottom: 5px
     }
+    #buttonAcceuil{
+        position:absolute;
+        bottom: 10px;
+        right: 10px;
+        font-size:18px;
+        padding:5px 7px;
+    }
+    #buttonAcceuil:active {
+        top:410px;
+        bottom: 5px
+    }
     p{
         font-size: 30px;
     }
@@ -214,6 +236,17 @@
         padding:7.5px 10.5px;
     }
     #buttonBack:active {
+        top:401px;
+        bottom: 6px
+    }
+    #buttonAcceuil{
+        position:absolute;
+        bottom: 10px;
+        right: 10px;
+        font-size:20px;
+        padding:7.5px 10.5px;
+    }
+    #buttonAcceuil:active {
         top:401px;
         bottom: 6px
     }
