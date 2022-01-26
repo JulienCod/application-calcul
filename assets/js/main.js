@@ -7,6 +7,8 @@ let level=0;
 let randomRange = 0;
 let score = 0;
 let counter = 0;
+// Variable permettant de basculer du mode perso au mode aléatoire
+let num = 0;
 // variable configuration perso
 let valeurMin = 0;
 let valeurMax = 0;
@@ -39,7 +41,7 @@ function calculPerso(){
     <div id="configPerso">
       <p>Configuration</p>
       
-      <label for="intervalValue">Interval entre :</label>
+      <label for="intervalValue">Intervalle entre :</label>
       <input type="number" name="valueMin" id="valueMin" placeholder="Valeur minimum">
       <input type="number" name="valueMax" id="valueMax" placeholder="Valeur maximum">
       <label for="">Deuxième nombre :</label>
@@ -64,8 +66,9 @@ function configCalculPerso(){
     
   if(!isNaN(valeurMin) && !isNaN(valeurMax) && !isNaN(secondNumber) ){
     if(symbol !==""){
-      level = "Profil personnalisé"
-      calculateTest(1);
+      level = "Profil personnalisé";
+      num = 1;
+      calculateTest();
       showScoreInformation();
     }else{
       alert(' veuillez sélectionner un type de calcul !')
@@ -103,6 +106,7 @@ function setSymbolPerso(sym){
 
 // étape 1 récupération des informations de l'utilisateur.
 function setSymbol(sym){
+  num = 2;
   symbol = sym.value;
   startTestQuestion();
 }
@@ -152,7 +156,7 @@ function showScoreInformation(){
 }
 
 //La fonctionne calculateTest reçois un numbre en argument afin de gérer le cas du calcul aléatoire (num=2) de la configuration perso (num=1);
-function calculateTest(num){
+function calculateTest(){
  
   document.getElementById('result').innerHTML='';
   if(num === 1){
@@ -183,11 +187,11 @@ function calculateTest(num){
       }
       break;
   };
-  testQuestion(num);
+  testQuestion();
 }
 
  //afficher le test
-function testQuestion(num){
+function testQuestion(){
            
   //hide level and expression option
   document.getElementById('level').innerHTML='';
@@ -204,24 +208,24 @@ function testQuestion(num){
   document.getElementById("playerInput").focus();
   document.getElementById("playerInput").addEventListener("keydown",(value) =>{
      if (value.key === 'Enter')
-     setUserInput(num)
+     setUserInput()
   })
 }
 
 //Récupérer le résultat de l’utilisateur.
-function setUserInput(num){
+function setUserInput(){
   let inputUserResult = parseFloat(document.getElementById('playerInput').value);
     console.log(inputUserResult);
   if(!isNaN(inputUserResult)){
     userInput = inputUserResult;
-    checkUserResult(num);
+    checkUserResult();
   }else{
     alert(' Veuillez saisir une valeur !')
   }
 }
 
 //Afficher le résultat du test.
-function checkUserResult(num){
+function checkUserResult(){
   document.getElementById('calcul').innerHTML='';
   if (userInput == result){
     document.getElementById('result').innerHTML=`
