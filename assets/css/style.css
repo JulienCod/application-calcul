@@ -16,6 +16,15 @@ h1{
     font-size: 40px;
     margin: 25px;
 }
+h2{
+    font-size:35px ;
+    margin: 5px;
+}
+#welcome p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
 .flex-around{
     display: flex;
     justify-content: space-around;
@@ -163,7 +172,9 @@ margin:0;
 p{
     color: white;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
+    margin: 15px;
+    align-self: center;
 }
 #score{
     width: 33%;
@@ -205,4 +216,21 @@ p{
 }
 footer{
     padding:50px
+}
+#configPerso, #calculPerso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#configPerso label, #configPerso input{
+    width: auto;
+    text-align: center;
+    height: auto;
+    font-size: 24px;
+}
+#typeCalcul{
+    display: flex;
+}
+#typeCalcul button{
+    margin: 15px 3px;
 }
