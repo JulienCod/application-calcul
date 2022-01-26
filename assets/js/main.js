@@ -46,7 +46,12 @@ function calculPerso(){
       <input type="number" name="twoNum" id="twoNum" placeholder="Entrer une valeur">
       <button class="button" onclick="configCalculPerso()">Valider</button>
     </div>
-  </div>`  
+  </div>` 
+  document.getElementById("valueMin").focus();
+  document.getElementById("twoNum").addEventListener("keydown",(value) =>{
+     if (value.key === 'Enter')
+     configCalculPerso()
+  })
 }
 function configCalculPerso(){
   let inputValueMin = parseFloat(document.getElementById('valueMin').value);
